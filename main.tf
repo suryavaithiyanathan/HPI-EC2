@@ -1,8 +1,3 @@
-provider "aws" {
-  region  = "${var.aws-region}"
-  profile = "${var.aws-profile}"
-}
-
 resource "aws_instance" "instance" {
   ami                         = "${var.instance-ami}"
   instance_type               = "${var.instance-type}"
